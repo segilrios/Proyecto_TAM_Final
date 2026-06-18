@@ -1,0 +1,14 @@
+{
+  "horizon": 21,
+  "feature_set": "colombia_plus_global_full",
+  "model": "HistGradientBoostingClassifier",
+  "train_window_years": "all",
+  "weight_strategy": "balanced",
+  "mean_threshold": 0.3103407486887806,
+  "mean_balanced_accuracy": 0.8734228782809603,
+  "mean_accuracy": 0.8877165202081129,
+  "mean_roc_auc": 0.9478345930134738,
+  "n_features_final": 2200,
+  "regime_version": "umap_k6_7_structural",
+  "model_file": "best_model_bundle.joblib"
+}

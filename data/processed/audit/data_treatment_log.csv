@@ -1,0 +1,10 @@
+paso,etapa,descripcion,archivo_salida
+1,Carga base Colombia,"Normalización de nombres, fecha y columnas numéricas desde BD_Energía_Colombia.xlsx.",base_colombia_normalizada.csv
+2,Frecuencia efectiva,"Cálculo de valores únicos, porcentaje repetido y frecuencia real por variable.",coverage.csv
+3,Enfermedad holandesa,Integración anual y rezago dd_lag1 para evitar fuga temporal.,dutch_disease.csv
+4,Contexto global,Reutilización o descarga de Yahoo Finance; reindexación al calendario local y forward-fill sin backfill.,global_market_context_homogenized.csv
+5,Feature engineering,"Retornos, diferencias, lags, rolling means/std, distancias a máximos/mínimos y variables calendario.",feature_engineering_catalog.csv
+6,Targets,Construcción de target_up_h21 y target_up_h30 como sube vs no sube.,target_diagnostics.csv
+7,Regímenes,UMAP/KMeans Colombia-only para niveles absolutos y cambios.,umap_regimes.csv
+8,Validación,Walk-forward temporal con calibración de umbral usando solo pasado.,classification_summary.csv
+9,Auditoría,"Comparación con feature sets sin oro internacional directo, sin metales y solo macro global.",audit_summary.csv

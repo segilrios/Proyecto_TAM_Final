@@ -1,0 +1,16 @@
+tag,horizon,feature_set,model,train_window_years,weight_strategy,max_features,reason,regime_version
+competitivo_HGB_full_all_balanced,21,colombia_plus_global_full,HistGradientBoostingClassifier,,balanced,2200,Muy competitivo en corrida previa; full global + balance de clases.,umap_k6_7_structural
+competitivo_XGB_full_15_none,21,colombia_plus_global_full,XGBClassifier,15.0,none,2200,Uno de los mejores XGB observados; ventana 15 años.,umap_k6_7_structural
+competitivo_XGB_full_all_recency,21,colombia_plus_global_full,XGBClassifier,,recency_4y,2200,Full global con énfasis en datos recientes.,umap_k6_7_structural
+competitivo_XGB_full_15_cluster,21,colombia_plus_global_full,XGBClassifier,15.0,cluster_x4,2200,Full global ponderando regímenes poco frecuentes.,umap_k6_7_structural
+competitivo_HGB_full_all_none,21,colombia_plus_global_full,HistGradientBoostingClassifier,,none,2200,Referencia fuerte sin ponderación.,umap_k6_7_structural
+historico_XGB_compact_all_none,21,colombia_plus_global_compact,XGBClassifier,,none,1500,Configuración comparable al mejor resultado histórico reportado.,umap_k6_7_structural
+compact_XGB_all_recency,21,colombia_plus_global_compact,XGBClassifier,,recency_4y,1500,Compacto global con énfasis reciente.,umap_k6_7_structural
+auditoria_XGB_no_gold_direct_all_none,21,global_no_gold_direct,XGBClassifier,,none,1500,Auditoría sin GLD/IAU/GC directo.,umap_k6_7_structural
+auditoria_HGB_no_gold_direct_all_balanced,21,global_no_gold_direct,HistGradientBoostingClassifier,,balanced,1500,Auditoría sin oro directo con modelo alternativo.,umap_k6_7_structural
+auditoria_XGB_no_metals_all_none,21,global_no_metals,XGBClassifier,,none,1500,Auditoría sin metales; mide señal macro no metálica.,umap_k6_7_structural
+auditoria_XGB_macro_only_all_none,21,global_macro_only,XGBClassifier,,none,1500,Contexto macro global sin depender de instrumentos metálicos.,umap_k6_7_structural
+referencia_colombia_only_XGB_all_recency,21,colombia_only,XGBClassifier,,recency_4y,1500,Referencia local: mide cuánto se logra sin contexto global.,umap_k6_7_structural
+referencia_colombia_only_HGB_all_macrofull,21,colombia_only,HistGradientBoostingClassifier,,macrofull_x15,1500,Referencia local con ponderación macroestructural.,umap_k6_7_structural
+referencia_RF_compact_15_macrofull,21,colombia_plus_global_compact,RandomForestClassifier,15.0,macrofull_x15,1500,Referencia de bosque aleatorio; más lenta y generalmente menos competitiva.,umap_k6_7_structural
+referencia_logit_compact_10_recency,21,colombia_plus_global_compact,LogisticRegression,10.0,recency_4y,900,Referencia lineal/interpretable de menor capacidad.,umap_k6_7_structural

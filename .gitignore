@@ -1,0 +1,10 @@
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.env
+.venv/
+venv/
+.DS_Store
+*.log
+outputs/tmp/
+dashboard_data_checkpoint*/

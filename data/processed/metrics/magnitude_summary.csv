@@ -1,0 +1,2 @@
+feature_set,model,magnitude_method,mean_rmse_return,mean_mae_return,mean_corr_return,mean_direction_bacc_from_return,mean_direction_acc_from_return,n_blocks,n_test_total
+colombia_plus_global_full,XGBRegressor,direct_return_regression,0.016299926756456164,0.012710056444824341,0.7150093448584702,0.7374433630010404,0.7330673740144074,10,1826

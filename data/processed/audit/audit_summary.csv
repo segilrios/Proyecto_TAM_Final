@@ -1,0 +1,6 @@
+audit_case,best_model,train_window_years,mean_accuracy,mean_balanced_accuracy,mean_roc_auc,delta_bacc_vs_best,status,interpretacion
+colombia_only,XGBClassifier,all,0.6220902746064889,0.6521417736690966,0.7427233960961745,-0.22128110461186368,rojo_dependencia_alta,Base local sin contexto global.
+colombia_plus_global_compact,XGBClassifier,all,0.6245299709898557,0.6865663040541243,0.7383928368562278,-0.186856574226836,referencia,Modelo global compacto original.
+global_no_gold_direct,HistGradientBoostingClassifier,all,0.6794046783147192,0.665325908672596,0.750472583042158,-0.20809696960836432,rojo_dependencia_alta,"Excluye GLD, IAU y GC=F."
+global_no_metals,XGBClassifier,all,0.5479627896724942,0.6261317200008235,0.7075777378326095,-0.2472911582801368,rojo_dependencia_alta,"Excluye oro, plata y metales cercanos."
+global_macro_only,XGBClassifier,all,0.7086701792082527,0.7263874563763798,0.8429184542582846,-0.14703542190458052,rojo_dependencia_alta,"Conserva solo macro global: dólar, VIX, tasas, equity, petróleo."

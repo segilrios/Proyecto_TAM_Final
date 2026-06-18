@@ -1,0 +1,11 @@
+var,grupo,n_no_nulos,n_unicos,pct_repetido,freq,fecha_ini,fecha_fin
+demanda_energetica,Colombia,9283,9283,0.0,diaria,2000-01-01,2025-05-31
+trm,Colombia,9283,5932,36.1,diaria con repetidos,2000-01-01,2025-05-31
+tipm,Colombia,9283,45,99.52,mensual→diaria (ff),2000-01-01,2025-05-31
+precio_brent,Colombia,9283,4601,50.44,diaria con repetidos,2000-01-01,2025-05-31
+precio_oro,Colombia,9283,305,96.71,mensual→diaria (ff),2000-01-01,2025-05-31
+precio_cafe_centusd,Colombia,9283,305,96.71,mensual→diaria (ff),2000-01-01,2025-05-31
+dtf,Colombia,9283,662,92.87,semanal/trimestral→diaria (ff),2000-01-01,2025-05-31
+bancolombia_price_usd,Colombia,9283,5410,41.72,diaria con repetidos,2000-01-01,2025-05-31
+inflacion_sin_alimentos,Colombia,9283,257,97.23,mensual→diaria (ff),2000-01-01,2025-05-31
+precio_bolsa_nacional_energetica,Colombia,9283,9274,0.1,diaria,2000-01-01,2025-05-31

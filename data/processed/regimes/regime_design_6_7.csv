@@ -1,0 +1,3 @@
+regime_version,embedding,selected_n_clusters,selected_n_neighbors,selected_min_dist,silhouette,nmi_dutch_disease,nmi_policy_stance,selection_score
+umap_k6_7_structural,abs,7,75,0.1,0.47006902,0.26242183679569786,0.06888021891477453,0.5163203183973891
+umap_k6_7_structural,chg,7,15,0.0,0.43315193,0.023938146830719743,0.06327146134858307,0.4430697987300687
